@@ -11,7 +11,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
   - port: 80
-    nodePort: {{ .Values.service.nodePort }}
     targetPort: {{ .Values.service.targetPort }}
+    nodePort: {{ .Values.service.nodePort }}
   selector:
     name: front-end
